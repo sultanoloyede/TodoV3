@@ -6,10 +6,22 @@ const Form = styled.form `
 `
 
 const TodoInputEdit = styled.input`
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: #fff;
   border: 2px solid #149fff;
 `
 
 const TodoButtonEdit = styled.button`
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  text-transform: capitalize;
   background: linear-gradient(
     90deg,
     rgb(200, 20, 255) 0%,

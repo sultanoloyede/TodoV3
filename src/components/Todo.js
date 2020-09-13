@@ -4,12 +4,13 @@ import { RiCloseCircleLine } from 'react-icons/ri';
 import { TiEdit } from 'react-icons/ti';
 import styled from 'styled-components';
 
-const Icons = styled.icons`
+const Icons = styled.div`
   display: flex;
   align-items: center;
   font-size: 24px;
   cursor: pointer;
 `
+
 
 const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
   const [edit, setEdit] = useState({

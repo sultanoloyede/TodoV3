@@ -31,10 +31,6 @@ body {
   opacity: 0.4;
 }
 
-.todo-form {
-  margin-bottom: 32px;
-}
-
 .todo-input {
   padding: 14px 32px 14px 16px;
   border-radius: 4px 0 0 4px;
@@ -62,19 +58,6 @@ body {
   );
   color: #fff;
   text-transform: capitalize;
-}
-
-.todo-input.edit {
-  border: 2px solid #149fff;
-}
-
-.todo-button.edit {
-  background: linear-gradient(
-    90deg,
-    rgb(200, 20, 255) 0%,
-    rgb(255, 17, 203) 100%
-  );
-  padding: 16px 22px;
 }
 
 .todo-container {
@@ -122,13 +105,6 @@ body {
     rgba(20, 159, 255, 1) 0%,
     rgba(17, 122, 255, 1) 100%
   );
-}
-
-.icons {
-  display: flex;
-  align-items: center;
-  font-size: 24px;
-  cursor: pointer;
 }
 
 .delete-icon {
