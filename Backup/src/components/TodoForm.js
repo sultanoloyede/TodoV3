@@ -1,22 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import styled from 'styled-components';
-
-const Form = styled.form `
-  margin-bottom: 32px;
-`
-
-const TodoInputEdit = styled.input`
-  border: 2px solid #149fff;
-`
-
-const TodoButtonEdit = styled.button`
-  background: linear-gradient(
-    90deg,
-    rgb(200, 20, 255) 0%,
-    rgb(255, 17, 203) 100%
-  );
-  padding: 16px 22px;
-`
 
 function TodoForm(props) {
   const [input, setInput] = useState(props.edit ? props.edit.value : '');
@@ -42,19 +24,20 @@ function TodoForm(props) {
   };
 
   return (
-    <Form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className='todo-form'>
       {props.edit ? (
         <>
-          <TodoInputEdit
+          <input
             placeholder='Update your item'
             value={input}
             onChange={handleChange}
             name='text'
             ref={inputRef}
+            className='todo-input edit'
           />
-          <TodoButtonEdit onClick={handleSubmit}>
+          <button onClick={handleSubmit} className='todo-button edit'>
             Update
-          </TodoButtonEdit>
+          </button>
         </>
       ) : (
         <>
@@ -71,7 +54,7 @@ function TodoForm(props) {
           </button>
         </>
       )}
-    </Form>
+    </form>
   );
 }
 

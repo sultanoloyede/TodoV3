@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import TodoList from './components/TodoList';
-import styled from 'styled-components';
 
 function App() {
   return (

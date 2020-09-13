@@ -1,13 +1,6 @@
 import React, { useState } from 'react';
 import TodoForm from './TodoForm';
 import Todo from './Todo';
-import styled from 'styled-components';
-
-const H1 = styled.h1`
-  margin: 32px 0;
-  color: #fff;
-  font-size: 24px;
-`
 
 function TodoList() {
   const [todos, setTodos] = useState([]);
@@ -39,7 +32,7 @@ function TodoList() {
 
   return (
     <>
-      <H1>Todo List</H1>
+      <h1>Todo List</h1>
       <TodoForm onSubmit={addTodo} />
       <Todo
         todos={todos}
